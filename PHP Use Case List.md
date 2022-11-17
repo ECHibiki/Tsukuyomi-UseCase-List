@@ -31,6 +31,17 @@
   - Get a poll
   - Formatting post data into appropriate format for DB insert
   - Formatting DB poll data to be placed into an HTML body
--  report.php
+- report.php
   - A page that could be embeded for reporting
   - Reporting should really have a captcha attatched to it
+- score.php
+  - A return on the score for a given post(though I think this should be placed into the template... maybe)
+  - Handle score post and return new score
+- scoring.php
+  - Handle a get request returning the current score (This should verify that the board actually exists)
+  - Handle a post request updating the score and returning the updated value
+  - Delete a score. Verify this happens 
+- search.php
+  - Hack together some clone of this until the search+archive project is completed at a later date
+- wl-token.php
+  - A page like ban-check which verifies a token works or not
