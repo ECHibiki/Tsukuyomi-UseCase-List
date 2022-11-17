@@ -1,2 +1,35 @@
 # Tsukuyomi-UseCase-List
 A public list of usecases to be carried over from Kissu's Vichan varient.
+
+- Agent.php
+  - Program to display user's IP and agent 
+  - for testing and debugging purposes
+- Public ban listing
+  - Perhaps just remove it
+  - That or display a complete list
+  - Allow users to filter down to a smaller one
+  - Display of only active bans(unchecked bans should be mod only)
+  - Perhaps Infinite scroll or GID like ex did
+  - No page search
+- Banned.php
+  - Turn it into kissu.moe/ban-check 
+  - Ban page check, but add a captcha to it before checking.
+  - Add a new page which renders ban information based on post data
+- New.php or Legacy.php
+  - Transition between UI
+- motd.php
+  - Remove it
+  - Give it a place on the dashboard instead
+- player.php
+  - I wonder if this is needed...
+  - Probably not
+- poll.php
+  -  System handles incoming votes and displays poll results
+- polling.php
+  - The actual handlers for polling
+  - Delete a poll
+  - Create a poll
+  - Respond to a poll
+  - Get a poll
+  - Formatting post data into appropriate format for DB insert
+  - Formatting DB poll data to be placed into an HTML body
