@@ -62,4 +62,26 @@
     - Have a user limit so submitting
     - Add report to the mod list
     - send emails
-  - 
+  - Section: Post
+    - Board locked and other setting checks
+    - Build a $post array
+      - Format polls if exists
+      - Set spoiler value, frame
+      - check if it's an OP
+    - Check for submission errors
+    - Check for donor tag
+    - Prevent given IP from flooding post.php actions if not donor or mod
+    - Do ban check
+    - DNSBL check?
+    - Board specific post input validation
+    - Post file preprocessing/naming
+    - Download file from URL
+    - Check mod logins for trops
+    - Capcodes for mods
+    - regular filters apply to database and fail if captca hit
+    - OCR text filter check
+    - Insert data into respective tables
+    - Add a flood post for filter triggers
+    - Cyclical, bump, (no)noko and zombie handling
+    - Build pages
+  - Section: Release(captcha submission from filter)
