@@ -45,3 +45,21 @@
   - Hack together some clone of this until the search+archive project is completed at a later date
 - wl-token.php
   - A page like ban-check which verifies a token works or not
+
+- post.php
+  - Note: recycling bin.. a flag on posts for timed deletion and not rendered. Only for not /trans/ moves. Clear cites and other associations on recycle clear 
+  - Section: Delete
+    - Type of boardless delete and react delete should be combined .. delete_([a-zA-Z0-9]+)_(\d+)
+    - Remove score, polls, images, posts, threads
+    - Deletes trigger API, Legacy API and HTML updates
+    - Terminate with JSON
+    - deleteFile(ID) -> remove file from either a local or remote server, store to recycling bin, rebuild pages. On Embed a bit different, new DB config should handle this better. not on statics
+    - deletePost(ID) -> remove post with file or remove thread with posts, store object to recycling bin, bump order reset, rebuild pages. Remove flood entry if exists.
+  - Section: Report
+    - boardless and react should combine .. delete_([a-zA-Z0-9]+)_(\d+)
+    - Verify a captcha (settings flag to use)
+    - Block banned users from submitting
+    - Have a user limit so submitting
+    - Add report to the mod list
+    - send emails
+  - 
