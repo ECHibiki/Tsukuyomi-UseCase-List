@@ -9,4 +9,4 @@ A public list of usecases to be carried over from Kissu's Vichan varient.
 ## Existing Kissu SSR
 
 ## Hypothetical additions
- <a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/Hypothetical%20Ideas">Hypothetical List</a>
+ <a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/Hypothetical%20Ideas.md">Hypothetical List</a>
