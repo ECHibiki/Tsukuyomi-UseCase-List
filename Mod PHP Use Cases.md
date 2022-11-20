@@ -1,1 +1,38 @@
 # Mod.php list
+  - Prevent cross site or URL linked style attacks
+  - System of permissions restricting unauthorized users from some sections
+  - Section: Illegal
+    - Batch action of banning image, poster and deleting   
+  - Section: Page
+    - Display a static page created by the generator
+  -  Section: Login 
+    - Handle a succesful login
+    - Write cookies
+    - Handle fails  
+      - Standard fail action
+      - Add captcha to IP after 3 attempts 
+  -  Section: Confirm
+    - A method of handling URL links to mod requests   
+  - Section: Logout
+    - Removing login cookies and any other DB info that is associated with logins
+  - Section: Dashboard
+    - A list of important mod actions
+    - Updaters for when new information/messages are available
+      - Reports, Appeals, Mod Messages
+  - Section: Stats
+    - Listing of site data
+    - Post rates, IP activity
+    - Also can do a check for disk usage across all server
+    - Also can do a graph for storing data each time someone checks the stats page
+      - Possibly with an update goroutine or bot
+  - Section: Mod search
+    - Search by:
+      - Post info(IP, body, tripcodes, capcodes, names, File info)
+      - Moderator notes
+      - Ban list
+      - Mod logs
+    - Maybe some of these should be inside of the specif features themselves...
+  - Section: Board edit
+    - Changing names, subtitles 
+    - Topic and categories
+    - Pollboards, fileboards, scoreboards (generalize these so that it can be freely applied)
