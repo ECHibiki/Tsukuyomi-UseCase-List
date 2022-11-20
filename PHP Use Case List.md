@@ -88,7 +88,7 @@
     - Insert image to proper imageserver
     - Add a flood post for filter triggers
     - Cyclical, bump, (no)noko and zombie handling
-    - Build pages
+    - Build pages (also the 50 post only versions)
   - Section: Release(captcha submission from filter)
     - Verify captcha valid(with room for other captcha types in future)
     - Do another post speed check 
@@ -100,7 +100,7 @@
     - Insert image to proper imageserver
     - Add a flood post for filter triggers
     - Cyclical, bump, (no)noko and zombie handling
-    - Build pages
+    - Build pages (also the 50 post only versions)
   - Section: Appeal
     - Verify existing appeal
     - Check if ban is appealable
