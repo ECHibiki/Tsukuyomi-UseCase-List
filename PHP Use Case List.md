@@ -78,10 +78,26 @@
     - Download file from URL
     - Check mod logins for trops
     - Capcodes for mods
-    - regular filters apply to database and fail if captca hit
+    - regular filters apply to database and fail if captca hit. Store file to database(or os)
     - OCR text filter check
+    - Low mod activity actions
+    - Blockhash check
+    - Cites table build
     - Insert data into respective tables
+    - Insert image to proper imageserver
     - Add a flood post for filter triggers
     - Cyclical, bump, (no)noko and zombie handling
     - Build pages
   - Section: Release(captcha submission from filter)
+    - Verify captcha valid(with room for other captcha types in future)
+    - Do another post speed check 
+    - Retrieve and Clear stored entry on sucess 
+    - Process the image
+    - Do OCR
+    - Blockhash checks
+    - Build cites and any unfilled post data
+    - Insert image to proper imageserver
+    - Add a flood post for filter triggers
+    - Cyclical, bump, (no)noko and zombie handling
+    - Build pages
+  - Section: Appeal
