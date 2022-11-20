@@ -32,7 +32,25 @@
       - Ban list
       - Mod logs
     - Maybe some of these should be inside of the specif features themselves...
-  - Section: Board edit
+  - Section: Board creation/edit interchangeble
+    - Set URI only on create(and verify it's a valid URI name)
     - Changing names, subtitles 
     - Topic and categories
     - Pollboards, fileboards, scoreboards (generalize these so that it can be freely applied)
+  - Section: Mod logs
+    - A log of actions that mods and the system perform
+    - Filter actions down to specific users
+    - FIlter actions to specific boards
+  - Section: Mod view
+    - Display a board with the HTML pages showing mod actions on each post
+    - Display IPs 
+    - Index, threads and maybe /all/?
+  - Section: IP Notes
+    - Have mods add or remove notes
+    - Display dates, time, mod
+    - List the notes for the IP
+  - Section: IP Address page
+    - Have a paged list of the users activity on all boards
+    - Allow mod to scroll through each page of a given board
+    - Display IP info/hostname
+    - Ban IPs from page
