@@ -62,6 +62,7 @@
     - Have a user limit so submitting
     - Add report to the mod list
     - send emails
+    - Do Spam checks
   - Section: Post
     - Board locked and other setting checks
     - Build a $post array
@@ -101,3 +102,8 @@
     - Cyclical, bump, (no)noko and zombie handling
     - Build pages
   - Section: Appeal
+    - Verify existing appeal
+    - Check if ban is appealable
+    - Send appeal
+      - Do Spam checks 
+    - Show user that appeal has been sent. 
