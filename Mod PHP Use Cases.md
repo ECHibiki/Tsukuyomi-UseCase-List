@@ -2,6 +2,7 @@
 Prevent cross site or URL linked style attacks<br/>
 System of permissions restricting unauthorized users from some sections<br/>
 All actions go into the mod log<br/>
+An awareness of what's on the overboard should prevent /all/ rebuilds<br/>
 
   - Section: Illegal
     - Batch action of banning image, poster and deleting   
@@ -110,4 +111,29 @@ All actions go into the mod log<br/>
     - Move a thread or post into the transparency board
     - Files need to be tagged with "Deleted by X from Y" with replies given "Moved by followup"
     - Rebuild pages
-  - Section:
+  - Section: Thread move
+    - For shadow instead of move it will copy and add a post to the origin 
+    - Make a relocation of the head of the thread with image
+    - Move cary on to do it with all the posts
+      - Possiblity of using 'section: move reply' here
+    - Clear old cites and build new ones
+    - Retarget links to new items
+    - Rebuild pages
+  - Section: Ban file hash
+    - Take thread image
+    - Apply hash check algorithm
+    - Store banned hash
+    - Various error checks for invalid files
+  - Section: Ban post
+    - Take a given post
+    - Apply a ban to it's IP and store the post data associated with it 
+      - IP may be modified into a subnet
+    - Preset reasons with custom justificatiosn
+    - For a public ban add a custom message to the ban object and append it to the existing post(requires page rebuild)
+    - Also may have the delete modifier which could be a true delete or a nerfed delete
+  - Section: Edit post
+    - Take a post and edit it
+      - HTML mode causes an override to the pre-markup mode
+      - Markup mode handled as normal
+    - Rebuild the cites for both markup and html mode 
+    - Rebuild pages
