@@ -58,6 +58,8 @@ All actions go into the mod log<br/>
     - Ban IPs from page
   - Section: Bans
     - Add a ban using established reasons and justifications
+    - IP and subnet bans
+    - Not linked to a post
     - Page redirects or json
   - Section: Ban List
     - List all the bans available
@@ -108,3 +110,4 @@ All actions go into the mod log<br/>
     - Move a thread or post into the transparency board
     - Files need to be tagged with "Deleted by X from Y" with replies given "Moved by followup"
     - Rebuild pages
+  - Section:
