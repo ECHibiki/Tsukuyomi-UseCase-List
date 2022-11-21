@@ -54,3 +54,43 @@
     - Allow mod to scroll through each page of a given board
     - Display IP info/hostname
     - Ban IPs from page
+  - Section: Bans
+    - Add a ban using established reasons and justifications
+    - Page redirects or json
+  - Section: Ban List
+    - List all the bans available
+    - Paged
+    - Limit amount of results based on GET values and page number
+    - Said elsewhere. Banlist should be searchable within this page
+  - Section: List Whitelist tokens
+    - Simple page listing all the token details
+    - Page for creating tokens
+  - Section: Alter WL Tokens
+    - Create, delete and edit existing tokens
+  - Section: View Ban whitelist
+    - A list of regex for IPs which should bypass VPN bans
+    - Post request allows for creating, editting and removing existing filters
+  - Section: Appeal list
+    - On GET list all the appeals with automatic spam flags
+    - On POST may allow for: 
+      - Adding the IP to a whitelist
+      - Giving a denial reason
+      - Unbanning the IP along with any ranges associated
+        - I think this should change
+  - Section: Mod Zombie or Lock, Bumplock, Agelock
+    - Modify the thread with the flag 
+    - Rebuild /all/, /board/ and all other associated pages
+  - Section: Mod Sticky
+    - Set the flag and bump it 
+    - Or unset the flag and do not bump it
+  - Section: Mod Cycle
+    - Modify the thread with the given flag
+    - Send a bunch of posts to the recycling bin
+  - Section: Batch move
+    - Gather up a bunch of sent posts
+    - Identify which of these are threads, remove any of the posts in the list associated with the thread.
+    - Move thread to destination with posts, then individual posts into the destination.
+      - Could create a new thread with new posts or add a thread and posts to an existing thread
+    - Relocate associated files
+    - Existing posts need not be deleted because the DB should just require a board name change   
+    - Finally do a rebuild of pages
