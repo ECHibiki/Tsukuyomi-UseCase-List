@@ -97,6 +97,7 @@ An awareness of what's on the overboard should prevent /all/ rebuilds<br/>
     - Cites and links of posts need to be adjusted
     - Move thread to destination with posts, then individual posts into the destination.
       - Could create a new thread with new posts or add a thread and posts to an existing thread
+      - New thread occurs if there's no target
     - Relocate associated files
     - Existing posts need not be deleted because the DB should just require a board name change   
     - Finally do a rebuild of pages
@@ -110,6 +111,7 @@ An awareness of what's on the overboard should prevent /all/ rebuilds<br/>
   - Section: Mod nerf move
     - Move a thread or post into the transparency board
     - Files need to be tagged with "Deleted by X from Y" with replies given "Moved by followup"
+    -  Deletes reset the bump order unless explicitly specified to maintain it
     - Rebuild pages
   - Section: Thread move
     - For shadow instead of move it will copy and add a post to the origin 
@@ -137,3 +139,35 @@ An awareness of what's on the overboard should prevent /all/ rebuilds<br/>
       - Markup mode handled as normal
     - Rebuild the cites for both markup and html mode 
     - Rebuild pages
+  - Section: Batch delete
+    - Follow the route of nerf delete or true delete
+    - True:
+      - For each post apply a moderator delete action. 
+      - If a thread was deleted then a missing post will be skipped without error  
+    - Nerf:
+      - Apply the batch move algorithm
+      - The first numbered deleted item creates a thread in /trans/ 
+        - Deleted items could come from the overboard, but not yet for our current site abilities 
+      - If it's a thread then remove any posts in the list which are associated and move the full thread into the delete target
+      - Images follow with the move
+    -  Deletes reset the bump order unless explicitly specified to maintain it
+    - Rebuild pages
+  - Section: True delete
+    -  For a given post, apply a delete to it.
+    -  Deleted post goes into the recycling bin to be cleared on a timer
+    -  Deletes reset the bump order unless explicitly specified to maintain it
+    -  Rebuild pages
+  - Section: Delete file
+    - Send the file to the recycling bin for timed removal
+    - Rebuild pages
+  - Section: Spoiler file
+    - Apply spoilers to an image, removing the thumbnail
+    - Rebuild pages
+  - Section: Unspoiler file
+    - Use thumbnailing algorithms to recreate the thumbnail from the base image
+    - Rebuild pages
+  - Section: Delete by IP
+    - Determine if it's Site wide or board wide
+    - Collect the posts with the given IP
+    - Begin recycling operation on all
+    - Rebuild pages when done 
