@@ -1,6 +1,8 @@
 # Mod.php list
-  - Prevent cross site or URL linked style attacks
-  - System of permissions restricting unauthorized users from some sections
+Prevent cross site or URL linked style attacks<br/>
+System of permissions restricting unauthorized users from some sections<br/>
+All actions go into the mod log<br/>
+
   - Section: Illegal
     - Batch action of banning image, poster and deleting   
   - Section: Page
@@ -89,8 +91,20 @@
   - Section: Batch move
     - Gather up a bunch of sent posts
     - Identify which of these are threads, remove any of the posts in the list associated with the thread.
+    - Cites and links of posts need to be adjusted
     - Move thread to destination with posts, then individual posts into the destination.
       - Could create a new thread with new posts or add a thread and posts to an existing thread
     - Relocate associated files
     - Existing posts need not be deleted because the DB should just require a board name change   
     - Finally do a rebuild of pages
+  - Section: Move reply
+    - Replies being moved may create a new thread or be placed into other threads
+    - No such thing as shadow moves
+    - Simply reassign the post in the database to a new destination
+    - Cites and links of posts need to be adjusted
+    - relocate any files 
+    - Rebuild pages
+  - Section: Mod nerf move
+    - Move a thread or post into the transparency board
+    - Files need to be tagged with "Deleted by X from Y" with replies given "Moved by followup"
+    - Rebuild pages
