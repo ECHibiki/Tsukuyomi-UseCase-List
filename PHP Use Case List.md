@@ -1,6 +1,7 @@
 # Existing use cases per .PHP file
 - Various:
   - WEBM and MP4 need thumbnail timestamp 
+  - An awareness of what's on the overboard should prevent /all/ rebuilds<br/>
 - Agent.php
   - Program to display user's IP and agent 
   - for testing and debugging purposes
