@@ -2,3 +2,5 @@
 - Reintroduce the blotter into both UI
 - /trans/ should show polls or scores
 - .GIF timestamps
+- Spoilers on embeds
+- redis query caching instead of board tables
