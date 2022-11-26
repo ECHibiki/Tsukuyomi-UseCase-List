@@ -171,3 +171,50 @@ An awareness of what's on the overboard should prevent /all/ rebuilds<br/>
     - Collect the posts with the given IP
     - Begin recycling operation on all
     - Rebuild pages when done 
+  - Section: User Menu
+    - Display a list of details to do with moderators
+      - Set Usernames and passwords
+      - Set boards of authority
+      - Delete the User/Submit details
+      - Most recent moderator actions 
+  - Section: Create User
+    - Name and password
+    - Mod permission group
+    - Boards of authority
+  - Section: User list
+    - Display a list of users
+      - List all the user's details such as name, group, authorities, last activity 
+    - Menu allows to go to user edits or  log
+    - Menu allows for creation 
+  - Section: Rebuild
+    - Rebuild all the HTML pages and the JSON pages
+    - Some items should have flags
+    - Rebuild from a list of boards
+    - Rebuild posts themselves for markup changes
+    - Rebuild auxilary pages
+    - HTML specific
+      - Clear any cached templates
+  - Section: Reports
+    - A paged list of the reports
+    - Each entry should contain the report details and a copy of the thread in question
+    - Allow for mod actions from the display
+    - Allows for dismisal and mass dismissal
+  - Section: Recent posts list
+    - A list of recent posts displayed one my one.
+    - Should give some indicators of which threads they belong to
+    - Mod actions on posts
+  -  Section: Config list
+    - List the options for controlling the site
+    - Advanced mode and easy mode should be available
+    - Must be board specific but also have global
+    - Allow for the creation of board groups with grouped settings
+    - Basically do everything Vichan can do, but omit where it seems pointless
+      - Effectively the config file is a usecase list itself 
+    - Where Vichan uses themes for configuration, instead for the config list there should be a setting for /all/ or the index
+  - Section: Create HTML files
+    - Create generic HTML files located in the root or boards
+    - Append the URL to the router
+      - or just use a pub file which has directories for each board and then /global  
+  - Section: Data download
+    - Allow for the full site to be downloaded if a user inputs the master key
+    - Must be authorized through 2FA 
