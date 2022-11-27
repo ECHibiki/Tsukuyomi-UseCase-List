@@ -4,3 +4,4 @@
 - .GIF timestamps
 - Spoilers on embeds
 - redis query caching instead of board tables
+- Give a rank based voting for polls
