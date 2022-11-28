@@ -23,4 +23,18 @@
 - Logins need to throttle IPs on failure, captcha on failure and ensure there is no possibility of bruteforce
 - 2 Mod cookies per IP allowing for Desktop and another(like phone) 
 - File transfer mechanisms between servers(CDNs)
+- Citations creation is a thing
+- No need to build cites attatched to the legacy API
+- The dreaded markup system
+  - Examine some alternatives to using regex for all of this
+  - Even string search functions might be better
+  - In some cases stacks and queues are prefered
+  - random note but are there any uses for a (un)linked list?
+- Things like RAW mode and PUBBAN are put into the comment as a flag for it to be run under different rules
+  - WHY WAS VICHAN DESIGNED LIKE THIS
+  - THIS IS BAD
+  - USE A BITWISE DB FIELD INDICATING VARIOUS MOD CHANGES INSTEAD!!!   
+- HTML built threads have a last-50 mode. 
+  - Perhaps we want to add pages to the HTML threads in the future
+- How are we going to work dice rolls into this...
 - 
