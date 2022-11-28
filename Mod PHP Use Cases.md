@@ -112,6 +112,7 @@ An awareness of what's on the overboard should prevent /all/ rebuilds<br/>
     - Move a thread or post into the transparency board
     - Files need to be tagged with "Deleted by X from Y" with replies given "Moved by followup"
     -  Deletes reset the bump order unless explicitly specified to maintain it
+    -  A thread delete restores a thread from the archive
     - Rebuild pages
   - Section: Thread move
     - For shadow instead of move it will copy and add a post to the origin 
@@ -151,11 +152,13 @@ An awareness of what's on the overboard should prevent /all/ rebuilds<br/>
       - If it's a thread then remove any posts in the list which are associated and move the full thread into the delete target
       - Images follow with the move
     -  Deletes reset the bump order unless explicitly specified to maintain it
+    -  A thread delete restores a thread from the archive
     - Rebuild pages
   - Section: True delete
     -  For a given post, apply a delete to it.
     -  Deleted post goes into the recycling bin to be cleared on a timer
     -  Deletes reset the bump order unless explicitly specified to maintain it
+    -  A thread delete restores a thread from the archive
     -  Rebuild pages
   - Section: Delete file
     - Send the file to the recycling bin for timed removal
