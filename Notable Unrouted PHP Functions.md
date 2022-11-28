@@ -1,1 +1,26 @@
 # Notable Other PHP Functions
+
+- Whitelist Token Verification
+- Hiding the secret tokens and hash salts(if used, probably not because bcrypt)
+- OCR functionality and imageprocessing
+- Cover art ripping
+- Retire the archive for the dedicated site search tool(desuarchive like)
+- Filter rules should be doable from json
+  - No writting my own functions into it...
+- A filter hit needs to save the file somewhere
+- Captchouli data needs to be served
+- Logins need forms 
+- Capcodes should be set from JSON config files
+- Captcha staggering
+  - Each IP has a cooldown on submission for captcha confirms
+  - donors bypass
+- Bans need to be easy to read and follow the existing method of byte form inserts
+- There are two standards for API
+  - Legacy and New
+  - Instead of having the legacy be in a different storage location the legacy should be redirected from the legacy URL standard to the new, yet also route into it's true route
+- Webm/mp4/ogv thumb grabbing
+- Permission should be such that upload files should never be server side executable
+- Logins need to throttle IPs on failure, captcha on failure and ensure there is no possibility of bruteforce
+- 2 Mod cookies per IP allowing for Desktop and another(like phone) 
+- File transfer mechanisms between servers(CDNs)
+- 
