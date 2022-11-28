@@ -1,1 +1,21 @@
-
+# Config related use cases
+- A config builder
+- Share between Legacy UI and Kissu UI
+- Word filters
+- Remember not to hardcode any values
+- Poll limitations
+- Youtube embed handling
+- The list of permitted error types
+  - Message and error code
+- Directory structure 
+- What should I do with archive settings hmm
+- Capcode settings and additions
+  - Lets just have it do a name and a set of CSS rules
+-  User permission levels
+  - These need to modify the ability of moderator functions to be permitted by a user
+- Page limits and thread limits
+- Boards need to know if they're fileboards, pollboards, scoreboards
+  - either a mix or just a standard board
+- Banner settings
+  - Height x Width
+  - URL
