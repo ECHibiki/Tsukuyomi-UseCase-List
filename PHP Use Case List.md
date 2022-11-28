@@ -93,6 +93,9 @@
     - Add a flood post for filter triggers
     - Cyclical, bump, (no)noko and zombie handling
     - Build pages (also the 50 post only versions)
+    - Some actions occure in background after success is sent
+      - There should be another error message that is displayed from templating(SSR or HTML) if there was a failure after
+    - Both React and Pongo routes could be taken optimizing actions for both(though perhaps we could disregard this in a tsukuyomi)
   - Section: Release(captcha submission from filter)
     - Verify captcha valid(with room for other captcha types in future)
     - Do another post speed check 
@@ -105,6 +108,9 @@
     - Add a flood post for filter triggers
     - Cyclical, bump, (no)noko and zombie handling
     - Build pages (also the 50 post only versions)
+    - Some actions occure in background after success is sent
+      - There should be another error message that is displayed from templating(SSR or HTML) if there was a failure after
+    - Both React and Pongo routes could be taken optimizing actions for both(though perhaps we could disregard this in a tsukuyomi)
   - Section: Appeal
     - Verify existing appeal
     - Check if ban is appealable
