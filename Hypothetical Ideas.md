@@ -5,3 +5,5 @@
 - Spoilers on embeds
 - redis query caching instead of board tables
 - Give a rank based voting for polls
+- Thumbnail and media editor should be through an interface which allows swapping out for something other than imagemagik
+- Exif stripping should be a bit more advanced(whatever that means)
