@@ -80,6 +80,7 @@
     - Board specific post input validation
     - Post file preprocessing/naming
     - Download file from URL
+      - Proxy through an alternative  
     - Check mod logins for trops
     - Capcodes for mods
     - regular filters apply to database and fail if captca hit. Store file to database(or os)
