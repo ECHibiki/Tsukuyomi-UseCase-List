@@ -37,4 +37,5 @@
 - HTML built threads have a last-50 mode. 
   - Perhaps we want to add pages to the HTML threads in the future
 - How are we going to work dice rolls into this...
-- 
+- url linkification
+- Kissu link conversion 
