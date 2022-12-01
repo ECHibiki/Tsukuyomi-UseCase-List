@@ -8,7 +8,7 @@ A public list of usecases to be carried over from Kissu's Vichan varient.
  <a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/php-config-settings-usecases.md ">PHP Config settings</a>
 
 ## Existing Hazuki
-
+<a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/Hazuki%20Case%20List.md">Hazuki Server Functionality</a>
 ## Existing Kissu SSR
 <a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/kissu-fr%20server%20use%20cases.md">Kissu ReactJS Server</a>
 
