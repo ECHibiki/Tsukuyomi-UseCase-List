@@ -10,6 +10,7 @@ A public list of usecases to be carried over from Kissu's Vichan varient.
 ## Existing Hazuki
 
 ## Existing Kissu SSR
+<a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/kissu-fr%20server%20use%20cases.md">Kissu ReactJS Server</a>
 
 ## Hypothetical additions
  <a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/Hypothetical%20Ideas.md">Hypothetical List</a>
