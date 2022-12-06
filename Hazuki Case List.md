@@ -10,3 +10,23 @@
   - Simple accessing of data and generalizations
   - Consider a system that, instead of reading from the DB, will take from the JSON files instead to build DB style info
 - A Naive baye's system to evaluate spam (maybe there's a better source than making my own)
+- Every N minutes do a scan from a list of URLs to collect IPs
+  - From the list of IPs check if they exist on the ban list and if not add them in
+  - Perform rangebans on collections of IPs that fall within subnet ban threshholds
+  - Consult hazuki's methods
+- Similarity checks every N minutes to check which threads are similar to other threads
+  - Based on an algorithm which should be seperated and easy to modify/replace   
+  - Consult hazuki's methods
+- Build a site statistics which allows for the FTP server scenario
+- Collect banners to update the board properties list
+- Collect banner lists for the main properties
+- Update catalog pages with the database and through json file modifications on new data
+- Do not update certain pages which are not considered updatable
+- Build the home page with threads from recents and featureds
+- Build static pages such as error
+- Remake the recent thread by DB or file modifications
+- Use the catalog-last-update method to reduce bandwidth usage
+- Use a board-feed to show the last modifications to boards(posts and threads, deleted and added)
+- Remove JSON pages
+- Rebuild JSON pages and reset the last-update
+- Markup parsing(possible to do it without regex?)
