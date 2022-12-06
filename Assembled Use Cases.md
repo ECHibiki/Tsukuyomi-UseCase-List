@@ -64,3 +64,24 @@
   - Send appeal
   - Do Spam checks
   - Show user that appeal has been sent.
+
+- On post check for board locked
+- Process input post issue
+  - verify errors
+  - Format polls if exists
+  - Set spoiler value, frame
+  - check if it's an OP
+  - Donor states
+- Verify there's no post input flooding going on (after image verifications)
+- Check up submission 
+- Do ban, DNSBL, text filter, OCR checks, Blockhash and Board Specific checks
+- Low mod activity checks and settings that go off if there's no mod access recorded
+- Building the citations table and any other text reading database updates
+- Inserting data into the database
+- Inserting images in such a way that a custom CDN imageserv could be used
+- Add a flood post for filter triggers
+- Cyclical, bump, (no)noko and zombie handling
+- Building HTML pages (also the 50 post only versions)
+- Building API pages (the works from hazuki)
+- Some actions should occur in the background since not all themes should be built
+- The routes that the building of API or HTML pages can be varied based on the page style being used(kissu vs original ui)
