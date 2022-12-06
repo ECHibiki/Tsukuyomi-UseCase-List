@@ -41,10 +41,20 @@
 - Transition page for cycling between new and old UI via cookies
 - Handle polling inserts
   - and deletes and creates and get data and formatting for DB insert etc.etc.etc.
-- A report page which requires a captcha
 - handle scores
   - and deleting the scores, verifying that they exist, fetching all the forms etc.etc.etc.
 - For searching and archives have a temporary page that does the bare minimum
   - Will be replaced by hybrid archive search service later
 - wl token verification and info
--    
+
+- Deleted/Cyclical posts should go into archival state which places files into recycling
+- Deleting files are moved into recycling to be retrieved if restored. 
+  - Recycled items are deleted based on last modified time.
+- User deletes to be done effecting scores or polls
+  - File deletions and post deletions and embed deletions
+- A report page which requires a captcha
+  - Block banned users from submitting
+  - Have a user limit so submitting
+  - Add report to the mod list
+  - send emails
+  - Do Spam checks
