@@ -8,6 +8,8 @@
 - Embeds should be allowed to be spoilered from the mod UI
 - Add a new poll option for rank order voting(radio, multichoice, ranked)
 - Allow mods to upload or remove files in the static directory
+- Modify the properties.json files which control pages
+- Modify Featured pages 
 
 ## Server Operations
 - Create a flexible interface to create thumnails with imagemagik or another alternative
