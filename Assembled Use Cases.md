@@ -58,3 +58,9 @@
   - Add report to the mod list
   - send emails
   - Do Spam checks
+- Appeal
+  - Verify existing appeal
+  - Check if ban is appealable
+  - Send appeal
+  - Do Spam checks
+  - Show user that appeal has been sent.
