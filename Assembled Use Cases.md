@@ -19,8 +19,13 @@
 - Create exif stripping on mp4, png or jpg to only remove personal/GPS data and leave other info intact.
 - /all/ does not need to be rebuilt on certain threads identified as hidden
   - Hidden needs to be a flag which prevents a board from listing in /all/, summaries and home 
+- When site is run in a debug mode, all actions should be written to loggin txt files
 
 ## User Tools
+- Pages for kissu UI need to be pregenerated with API information for initialization
+  - HTML template with thread/page info
+  - Add in the user's style for quick CSS loading 
+
 - Embeds should be allowed to be spoilered from post
 - Submit a score for score update
 - View scores on posts from the API or HTML display
