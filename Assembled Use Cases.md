@@ -13,18 +13,42 @@
 - Modify Featured pages 
 - Set the message of the day txt from dash
 - Edit a poll
+- Edit the URLs used for scanning for IPs
 
 ## Server Operations
+- Routing of all pages and only allowing mods into certain areas
+- DB connection holding
+- Simple DB access methods
+- JSON file modification working on DB methods
 - Create a flexible interface to create thumnails with imagemagik or another alternative
 - Create exif stripping on mp4, png or jpg to only remove personal/GPS data and leave other info intact.
 - /all/ does not need to be rebuilt on certain threads identified as hidden
   - Hidden needs to be a flag which prevents a board from listing in /all/, summaries and home 
 - When site is run in a debug mode, all actions should be written to loggin txt files
+- Spam detection runs on top of a naive bayes system
+- From a list of URLs for IP scanning, do a check on each IP every N minutes
+  - From the list of IPs check if they exist on the ban list and if not add them in
+  - Perform rangebans on collections of IPs that fall within subnet ban threshholds
+- Similarity checks done every N minutes on a system of rules
+  - The check modifies the JSON and SQL data causing rebuilds
+  - Algorithm rules should be easily modifiable  
+- Site statistics should be ready to be used on a CDN/multi server configuration
+  - Read from server data files that are updated every action inside of given servers
+  - data files holding number of posts, posters and data size
+- Collect banners from the banenrs program via URL fetch
+  - Updates on the properties files
+  - Updates on the master banners list  
 
 ## User Tools
 - Pages for kissu UI need to be pregenerated with API information for initialization
   - HTML template with thread/page info
   - Add in the user's style for quick CSS loading 
+
+- Recent feed, home page, all page, catalog pages... should be updated by JSON modification or SQL rebuilds
+- Catalog last-update files to be updated after every json modification
+- board feed to show new posts to boards or deleted posts on boards
+- The removal and construction of JSON pages
+- Markup parsing, preferably not with regex
 
 - Embeds should be allowed to be spoilered from post
 - Submit a score for score update
@@ -97,3 +121,4 @@
   - Will have to perform OCR checks and do a hard reject on fail
   - Text filters should all be pre verified
 - On release do the post-filter actions of standard posting. 
+- On release, queue captchas done by given IPs(prevent significant post-no flooding)
