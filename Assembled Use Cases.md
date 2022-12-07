@@ -85,3 +85,10 @@
 - Building API pages (the works from hazuki)
 - Some actions should occur in the background since not all themes should be built
 - The routes that the building of API or HTML pages can be varied based on the page style being used(kissu vs original ui)
+
+- When filters are triggered, store a temp post to the DB with the tmp file stored somewhere
+- Captcha release to verify captchas sent
+- On captcha release pull out a stored image and data
+  - Will have to perform OCR checks and do a hard reject on fail
+  - Text filters should all be pre verified
+- On release do the post-filter actions of standard posting. 
