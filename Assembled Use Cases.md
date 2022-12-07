@@ -104,6 +104,7 @@
 - Verify there's no post input flooding going on (after image verifications)
 - Check up submission 
 - Do ban, DNSBL, text filter, OCR checks, Blockhash and Board Specific checks
+  - Certain triggers are bypassed if detected as moderator or VIP 
 - Low mod activity checks and settings that go off if there's no mod access recorded
 - Building the citations table and any other text reading database updates
 - Inserting data into the database
