@@ -220,4 +220,4 @@ An awareness of what's on the overboard should prevent /all/ rebuilds<br/>
       - or just use a pub file which has directories for each board and then /global  
   - Section: Data download
     - Allow for the full site to be downloaded if a user inputs the master key
-    - Must be authorized through 2FA 
+    - Must be authorized through email verification
