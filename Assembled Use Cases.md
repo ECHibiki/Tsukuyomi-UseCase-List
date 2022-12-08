@@ -98,6 +98,7 @@
 - Ban post
   - For a public ban add a custom message to the ban object and append it to the existing post(requires page rebuild) 
   - Pub bans are stored in the DB, not the body
+  - IPs should be stored in byte form
 - Edit post
 - True delete
 - Delete file
@@ -111,11 +112,16 @@
 - Report list
 - Recent posts list
 - Configuration display
-  - 
+  - Build config from the JSON configuration files. Fields have to have key, value and types, mod level
+  - All existing systems from vichan
+  - error codes 
+  - Filter rule setting
 - Create HTML files
 - Data backup download 
  - Allow for the full site to be downloaded if a user inputs the master key
  - Must be authorized through email verifications
+
+- Hide secret data from config files. 
 
 
 ## Server Operations
@@ -141,7 +147,9 @@
 - Collect banners from the banenrs program via URL fetch
   - Updates on the properties files
   - Updates on the master banners list  
-
+- Permission levels of files themselves should be safe
+- Dice rolling is dropped
+ 
 ## User Tools
 - Pages for kissu UI need to be pregenerated with API information for initialization
   - HTML template with thread/page info
@@ -152,6 +160,9 @@
 - board feed to show new posts to boards or deleted posts on boards
 - The removal and construction of JSON pages
 - Markup parsing, preferably not with regex
+
+- Ripping thumbnails from audio
+- Converting URLs into links or board links
 
 - Embeds should be allowed to be spoilered from post
 - Submit a score for score update
