@@ -1,6 +1,13 @@
 # Assembled
 
 ## Moderator Tools
+- Deny any actions that occure through referals (no URL into mod actions)
+- Authorization levels on mod actions
+- Moderator logging
+- Moderator log ins
+- Moderator Cookies
+- Moderator brute force prevention
+- Moderator log off (clear login stored data)
 - Be able to disable captchas on forms
 - Configure a blotter and put the blotter into an API file for each board
 - Flexible combination of setting poll boards which can have no polls
@@ -14,6 +21,102 @@
 - Set the message of the day txt from dash
 - Edit a poll
 - Edit the URLs used for scanning for IPs
+
+- Batch actions on illegal deletes(hash, ban, delete)
+- Display public files (static pages and static info)
+- Display a moderator dashboard with all user controls(some hidden based on authorization level)
+  - Some display info on appeals or reports 
+- Stats pages 
+  - Listing of site data
+  - Post rates, IP activity
+  - Also can do a check for disk usage across all server
+  - Also can do a graph for storing data each time someone checks the stats page
+- Mod site search
+  - Search by:
+    - Post info(IP, body, tripcodes, capcodes, names, File info)
+    - Moderator notes
+    - Ban list
+    - Mod logs
+- Board creation/edit interchangeble
+  - Set URI only on create(and verify it's a valid URI name)
+  - Changing names, subtitles 
+  - Topic and categories
+  - Pollboards, fileboards, scoreboards
+-  Mod logs viewer
+  - A log of actions that mods and the system perform
+  - Filter actions down to specific users
+  - FIlter actions to specific boards
+- IP Notes
+  - Have mods add or remove notes
+  - Display dates, time, mod
+  - List the notes for the IP
+- IP Address page
+  - Have a paged list of the users activity on all boards
+  - Allow mod to scroll through each page of a given board
+  - Display IP info/hostname
+  - Ban IPs from page
+- Bans
+  - Add a ban using established reasons and justifications
+  - IP and subnet bans
+  - Not linked to a post
+  - Page redirects or json
+- Moderator Ban List
+  - List all the bans available
+  - Paged
+  - Limit amount of results based on GET values and page number
+  - Banlist should be searchable within this page
+- List Whitelist tokens
+  - Simple page listing all the token details
+  - Page for creating tokens
+- Alter WL Tokens
+  - Create, delete and edit existing tokens
+- View Ban whitelist
+  - A list of regex for IPs which should bypass VPN bans
+  - Post request allows for creating, editting and removing existing filters
+- Appeal list
+  - On GET list all the appeals with automatic spam flags
+    - Show if part of a range ban 
+  - On POST may allow for: 
+    - Adding the IP to a whitelist if part of a range, or removing the IP from bans if not
+    - Giving a denial reason
+    - Unbanning the IP range if applicable
+- Mod Zombie or Lock, Bumplock, Agelock
+  - Modify the thread with the flag 
+  - Rebuild /all/, /board/ and all other associated pages
+- Mod Sticky
+    - Set the flag and bump it 
+    - Or unset the flag and do not bump it
+- Mod Cycle
+  - Modify the thread with the given flag
+  - Send a bunch of posts to the recycling bin
+- Batch move (move a set of selected posts and threads)
+- Batch delete
+- Move reply
+- Mod nerf move
+- Thread move
+- Ban file hash
+- Ban post
+  - For a public ban add a custom message to the ban object and append it to the existing post(requires page rebuild) 
+  - Pub bans are stored in the DB, not the body
+- Edit post
+- True delete
+- Delete file
+- Spoiler file
+- Unspoiler file
+- Delete by IP
+- User Menu
+- Create User
+- User list
+- Rebuild pages/api/cites/markup
+- Report list
+- Recent posts list
+- Configuration display
+  - 
+- Create HTML files
+- Data backup download 
+ - Allow for the full site to be downloaded if a user inputs the master key
+ - Must be authorized through email verifications
+
 
 ## Server Operations
 - Routing of all pages and only allowing mods into certain areas
