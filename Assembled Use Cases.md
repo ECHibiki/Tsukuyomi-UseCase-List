@@ -73,6 +73,7 @@
 - View Ban whitelist
   - A list of regex for IPs which should bypass VPN bans
   - Post request allows for creating, editting and removing existing filters
+- Report list
 - Appeal list
   - On GET list all the appeals with automatic spam flags
     - Show if part of a range ban 
@@ -109,7 +110,6 @@
 - Create User
 - User list
 - Rebuild pages/api/cites/markup
-- Report list
 - Recent posts list
 - Configuration display
   - Build config from the JSON configuration files. Fields have to have key, value and types, mod level
@@ -120,7 +120,6 @@
 - Data backup download 
  - Allow for the full site to be downloaded if a user inputs the master key
  - Must be authorized through email verifications
-
 - Hide secret data from config files. 
 
 
