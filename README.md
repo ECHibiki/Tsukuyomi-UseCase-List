@@ -2,8 +2,11 @@
 A public list of usecases to be carried over from Kissu's Vichan varient.
 ## Tsukuyomi Specific Cases
 Combination of the legacy and hypothetical additions into a useable list.<br/>
-<a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/Assembled%20Use%20Cases.md">Assembled Use Case List</a><br/>
-<img src="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/Use-Case-Architecture.jpg?raw=true" />
+As time goes on, the later images will be less accurate. But for documentation sake, they are all listed in choronological order.<br/>
+<img src="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/Tsukuyomi-Diagram-Draft-1.png?raw=true" />
+<a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/Use-Case-Architecture.jpg">Assembled Use Case Image</a><br/>
+<a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/Assembled%20Use%20Cases.md">Assembled Use Case List</a>
+
 
 ## Hypothetical additions
  <a href="https://github.com/ECHibiki/Tsukuyomi-UseCase-List/blob/main/Hypothetical%20Ideas.md">Hypothetical List</a>
